@@ -1,0 +1,187 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "paymentId",
+						"type": "bytes32"
+					}
+				],
+				"name": "getPayment",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "paymentId",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "paymentHash",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "senderUuid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "recipientUuid",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bool",
+								"name": "completed",
+								"type": "bool"
+							}
+						],
+						"internalType": "struct PaymentGateway.Payment",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "paymentId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "paymentHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "senderUuid",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "recipientUuid",
+						"type": "bytes32"
+					}
+				],
+				"name": "pay",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "payments",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "paymentId",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "paymentHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "senderUuid",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "recipientUuid",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "bool",
+						"name": "completed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			".deps/remix-tests/ec_back.sol": "PaymentGateway"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		".deps/remix-tests/ec_back.sol": {
+			"keccak256": "0x80f8d1ac8740a9ee1cecf337bc319ec3944a4f070367db697986f0667f4a4787",
+			"urls": [
+				"bzz-raw://2346d54c04eca8f9fcdc3c4b835b7104fe34a6fca7f756e08b53b774cc32fd62",
+				"dweb:/ipfs/QmXS9o3cbdPfZVp7hMn8E3sq5kgmPHamSgSZbVYGk6ZAKC"
+			]
+		},
+		"github.com/OpenZeppelin/zeppelin-solidity/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x128678ee3c594161a26eae9b27d21b934e79556ce866306133c790c22d34f38c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://10971d43d16db54afe5212a618c36569bd34e3e25a63be612cf13652f2424efa",
+				"dweb:/ipfs/QmcsbVy4JBiamLWLMDrijhSW7CAZtyfh38prNuMq6geVT9"
+			]
+		}
+	},
+	"version": 1
+}
